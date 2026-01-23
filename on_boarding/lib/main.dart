@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:on_boarding/features/google_map/search_by_postalCode/screen/postal_search_screen.dart';
+import 'package:on_boarding/features/google_map/search_from_map/screen/add_place_screen.dart';
 import 'package:on_boarding/features/home/screen/home_sceen.dart';
 import 'package:on_boarding/features/splash_screen/splash_screen.dart';
 
@@ -19,7 +21,8 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.teal),
         useMaterial3: true,
       ),
-      home: SplashScreen(),
+      home: PostalSearchScreen(),
+      // home: AddPlaceScreen(),
     );
   }
 }
